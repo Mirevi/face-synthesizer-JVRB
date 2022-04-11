@@ -1,21 +1,21 @@
 # Face Synthesizer
 
-[Paper]() | [Video](https://youtu.be/fBofqRfvoiM) | [Code](https://github.com/Mirevi/face-synthesizer-JVRB)
-
-# Conference Video:
-[Youtube Video](https://youtu.be/fBofqRfvoiM)
-<p align="center">
-  <a href="https://youtu.be/fBofqRfvoiM">
-    <img width="50%" src="https://i.ytimg.com/vi/fBofqRfvoiM/hqdefault.jpg" />
-  </a>
-</p>
-
+Paper | [Video](https://youtu.be/fBofqRfvoiM) | [Code](https://github.com/Mirevi/face-synthesizer-JVRB)
 
 This Project is a neural approach to reconstruct a persons 3D-Face as RGBD image from 70 2D landmarks.
 The resulting RGBD image can be interpreted as a 2.5D point cloud and thus visualized in 3D applications.
 This project is based on the [UCP RGBD-Face-Avatar-GAN Project](https://github.com/Mirevi/UCP-Framework/tree/main/RGBD-Face-Avatar-GAN) ot the [MIREVI](https://mirevi.de/) Research Team.
 
 We use the [Pix2Pix-GAN by Isola et al.](https://phillipi.github.io/pix2pix/) as basis for our neural network with some modifications of the loss function from the [Pix2PixHD-GAN by Wang et al.](https://tcwang0509.github.io/pix2pixHD/). The generator remains from the non-HD version in order to generate reasonable framerates for Virtual Reality environments.
+
+# Conference Video:
+[Youtube Video](https://youtu.be/fBofqRfvoiM)
+<p align="center">
+  <a href="https://youtu.be/fBofqRfvoiM">
+    <img width="75%" src="https://i.ytimg.com/vi/fBofqRfvoiM/hqdefault.jpg" />
+  </a>
+</p>
+
 
 ## Requirements
 
