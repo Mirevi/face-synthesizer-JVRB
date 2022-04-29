@@ -4,31 +4,31 @@ Paper | [Video](https://youtu.be/fBofqRfvoiM) | [Code](https://github.com/Mirevi
 
 This Project is a neural approach to reconstruct a persons 3D-Face as RGBD image from 70 2D landmarks.
 The resulting RGBD image can be interpreted as a 2.5D point cloud and thus visualized in 3D applications.
-This project is based on the [UCP RGBD-Face-Avatar-GAN Project](https://github.com/Mirevi/UCP-Framework/tree/main/RGBD-Face-Avatar-GAN) ot the [MIREVI](https://mirevi.de/) Research Team.
+This project is based on the [UCP RGBD-Face-Avatar-GAN Project](https://github.com/Mirevi/UCP-Framework/tree/main/RGBD-Face-Avatar-GAN) by the [MIREVI](https://mirevi.de/) Research Team.
 
 We use the [Pix2Pix-GAN by Isola et al.](https://phillipi.github.io/pix2pix/) as basis for our neural network with some modifications of the loss function from the [Pix2PixHD-GAN by Wang et al.](https://tcwang0509.github.io/pix2pixHD/). The generator remains from the non-HD version in order to generate reasonable framerates for Virtual Reality environments.
 
 # Conference Video:
-[Youtube Video](https://youtu.be/fBofqRfvoiM)
 <p align="center">
   <a href="https://youtu.be/fBofqRfvoiM">
-    <img width="75%" src="https://i.ytimg.com/vi/fBofqRfvoiM/hqdefault.jpg" />
+    <img width="50%" src="img/yt.jpg" />
   </a>
 </p>
+
 
 
 ## Requirements
 
 1. Installed Python3 Version
 2. OpenCV
-3. CUDA
+3. Nvidia graphics card with CUDA 
 
 ## Getting started
 
 Note that the following instructions are for Windows users. Instructions for other operating systems may differ.
 
 1. To setup the project first clone it into your desired location on your computer.
-2. Next open your command line interface (CMI) and navigate into the root directory of the project.
+2. Next open your command line interface and navigate into the root directory of the project.
 3. After that create a Python Virtual Environment by executing the following command in the CMI: `python -m venv .venv`
 4. Now you need to install the required python dependencies by running the following commands:
 	1. Install Cython and cmake via pip install
@@ -41,12 +41,14 @@ Note that the following instructions are for Windows users. Instructions for oth
     6. `".venv/Scripts/pip.exe" install -r requirements.txt`
 
 Note that the <YOUR_TORCH_VERSION>, <YOUR_CUDA_VERSION> and <YOUR_TORCHVISION_VERSION> are refering to your individual project specific settings.
-We used Torch version 1.8.1 with CUDA Version 11.1 and Torchvision Version 0.9.1.
+We used Torch version 1.8.1 with CUDA 11.1 and Torchvision 0.9.1 on RTX2080, RTX2080 Ti and RTX3090 graphics card with Intel i7 and i9 CPUs.
 
 ## Create a dataset for training
 In order to be able to train a neural model, a dataset with RGB images, Depth images and Facial Landmarks is required.
 The generation of this dataset is divided into two steps.
 First capture image data with an Azure Kinect Camera and the process the captured data and create the dataset.
+
+In Summer 2022 a capture module will be implemented into our Mirevi Motion Hub (https://github.com/Mirevi/MotionHub) for an guided an easy capture, preprocessing and training process. In the meanwhile, we provide a bunch of python scripts for these steps. 
 
 We can provide data sets (around 6GB of size each) if you contact us. Please see the mail addresses in the paper
 
