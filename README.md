@@ -1,6 +1,6 @@
 # Face Synthesizer
 
-Paper | [Video](https://youtu.be/fBofqRfvoiM) | [Code](https://github.com/Mirevi/face-synthesizer-JVRB)
+[Paper](https://arxiv.org/abs/2301.01490) | [Video](https://youtu.be/fBofqRfvoiM) | [Code](https://github.com/Mirevi/face-synthesizer-JVRB)
 
 This Project is a neural approach to reconstruct a persons 3D-Face as RGBD image from 70 2D landmarks.
 The resulting RGBD image can be interpreted as a 2.5D point cloud and thus visualized in 3D applications.
